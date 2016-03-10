@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7156B11C77637400B8E079 /* RMDTimeClockTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7156B01C77637400B8E079 /* RMDTimeClockTableViewController.m */; };
+		CC7156B81C77674700B8E079 /* RMDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7156B71C77674700B8E079 /* RMDConstants.m */; };
 		CCD198501C2211EF00B930A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD1984F1C2211EF00B930A4 /* main.m */; };
 		CCD198531C2211EF00B930A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198521C2211EF00B930A4 /* AppDelegate.m */; };
-		CCD198561C2211EF00B930A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198551C2211EF00B930A4 /* ViewController.m */; };
-		CCD198591C2211EF00B930A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD198571C2211EF00B930A4 /* Main.storyboard */; };
 		CCD1985B1C2211EF00B930A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD1985A1C2211EF00B930A4 /* Assets.xcassets */; };
-		CCD1985E1C2211EF00B930A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD1985C1C2211EF00B930A4 /* LaunchScreen.storyboard */; };
 		CCD198691C2211EF00B930A4 /* timeclockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198681C2211EF00B930A4 /* timeclockTests.m */; };
 		CCD198741C2211EF00B930A4 /* timeclockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198731C2211EF00B930A4 /* timeclockUITests.m */; };
 /* End PBXBuildFile section */
@@ -35,15 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC7156AF1C77637400B8E079 /* RMDTimeClockTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockTableViewController.h; sourceTree = "<group>"; };
+		CC7156B01C77637400B8E079 /* RMDTimeClockTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockTableViewController.m; sourceTree = "<group>"; };
+		CC7156B61C77674700B8E079 /* RMDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDConstants.h; sourceTree = "<group>"; };
+		CC7156B71C77674700B8E079 /* RMDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDConstants.m; sourceTree = "<group>"; };
 		CCD1984B1C2211EF00B930A4 /* timeclock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeclock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD1984F1C2211EF00B930A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCD198511C2211EF00B930A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CCD198521C2211EF00B930A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CCD198541C2211EF00B930A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CCD198551C2211EF00B930A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CCD198581C2211EF00B930A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCD1985A1C2211EF00B930A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CCD1985D1C2211EF00B930A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCD1985F1C2211EF00B930A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD198641C2211EF00B930A4 /* timeclockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeclockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD198681C2211EF00B930A4 /* timeclockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = timeclockTests.m; sourceTree = "<group>"; };
@@ -78,6 +77,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC7156A91C7761A000B8E079 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CC7156AA1C7761A600B8E079 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC7156AF1C77637400B8E079 /* RMDTimeClockTableViewController.h */,
+				CC7156B01C77637400B8E079 /* RMDTimeClockTableViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CC7156AB1C7761AB00B8E079 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CC7156B51C77672D00B8E079 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC7156B61C77674700B8E079 /* RMDConstants.h */,
+				CC7156B71C77674700B8E079 /* RMDConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		CCD198421C2211EF00B930A4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +132,13 @@
 		CCD1984D1C2211EF00B930A4 /* timeclock */ = {
 			isa = PBXGroup;
 			children = (
+				CC7156B51C77672D00B8E079 /* Constants */,
+				CC7156A91C7761A000B8E079 /* Model */,
+				CC7156AA1C7761A600B8E079 /* View */,
+				CC7156AB1C7761AB00B8E079 /* Controller */,
 				CCD198511C2211EF00B930A4 /* AppDelegate.h */,
 				CCD198521C2211EF00B930A4 /* AppDelegate.m */,
-				CCD198541C2211EF00B930A4 /* ViewController.h */,
-				CCD198551C2211EF00B930A4 /* ViewController.m */,
-				CCD198571C2211EF00B930A4 /* Main.storyboard */,
 				CCD1985A1C2211EF00B930A4 /* Assets.xcassets */,
-				CCD1985C1C2211EF00B930A4 /* LaunchScreen.storyboard */,
 				CCD1985F1C2211EF00B930A4 /* Info.plist */,
 				CCD1984E1C2211EF00B930A4 /* Supporting Files */,
 			);
@@ -243,9 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD1985E1C2211EF00B930A4 /* LaunchScreen.storyboard in Resources */,
 				CCD1985B1C2211EF00B930A4 /* Assets.xcassets in Resources */,
-				CCD198591C2211EF00B930A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD198561C2211EF00B930A4 /* ViewController.m in Sources */,
 				CCD198531C2211EF00B930A4 /* AppDelegate.m in Sources */,
 				CCD198501C2211EF00B930A4 /* main.m in Sources */,
+				CC7156B11C77637400B8E079 /* RMDTimeClockTableViewController.m in Sources */,
+				CC7156B81C77674700B8E079 /* RMDConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,25 +336,6 @@
 			targetProxy = CCD198701C2211EF00B930A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CCD198571C2211EF00B930A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCD198581C2211EF00B930A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CCD1985C1C2211EF00B930A4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCD1985D1C2211EF00B930A4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CCD198761C2211EF00B930A4 /* Debug */ = {
@@ -498,6 +509,7 @@
 				CCD1987A1C2211EF00B930A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCD1987B1C2211EF00B930A4 /* Build configuration list for PBXNativeTarget "timeclockTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +518,7 @@
 				CCD1987D1C2211EF00B930A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCD1987E1C2211EF00B930A4 /* Build configuration list for PBXNativeTarget "timeclockUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +527,7 @@
 				CCD198801C2211EF00B930A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
