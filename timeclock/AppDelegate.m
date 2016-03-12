@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RMDTimeClockTableViewController.h"
+#import "RMDTimeClockViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    RMDTimeClockTableViewController *viewController = [[RMDTimeClockTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    RMDTimeClockViewController *viewController = [[RMDTimeClockViewController alloc] init];
     [self.window setRootViewController:viewController];
     [self.window makeKeyAndVisible];
     

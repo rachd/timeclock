@@ -10,4 +10,12 @@
 
 @implementation RMDConstants
 
++ (UIFont *)kArialMedium {
+    return [UIFont fontWithName:@"Arial" size:16];
+}
+
++ (UIFont *)kArialSmall {
+    return [UIFont fontWithName:@"Arial" size:14];
+}
+
 @end
