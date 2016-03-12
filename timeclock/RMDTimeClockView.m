@@ -38,7 +38,11 @@
 }
 
 - (void)setUpCells {
-    self.mondayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell" title:@"Monday" width:self.frame.size.width];
+    self.mondayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil title:@"Monday" width:self.frame.size.width];
+    self.tuesdayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil title:@"Tuesday" width:self.frame.size.width];
+    self.wednesdayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil title:@"Wednesday" width:self.frame.size.width];
+    self.thursdayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil title:@"Thursday" width:self.frame.size.width];
+    self.fridayCell = [[RMDTimeClockTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil title:@"Friday" width:self.frame.size.width];
 }
 
 - (void)setUpTimeClockTableView {
@@ -65,6 +69,14 @@
     if (indexPath.section == 0) {
         if (indexPath.row ==  0) {
             return self.mondayCell;
+        } else if (indexPath.row == 1) {
+            return self.tuesdayCell;
+        } else if (indexPath.row == 2) {
+            return self.wednesdayCell;
+        } else if (indexPath.row == 3) {
+            return self.thursdayCell;
+        } else {
+            return self.fridayCell;
         }
     }
     
