@@ -8,8 +8,12 @@
 
 #import "RMDTimeClockViewController.h"
 #import "RMDTimeClockView.h"
+#import <UIKit/UIKit.h>
 
 @interface RMDTimeClockViewController ()
+
+@property UITextField *textField;
+@property UIDatePicker *timePicker;
 
 @end
 
@@ -17,11 +21,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    RMDTimeClockView *timeClockView = [[RMDTimeClockView alloc] initWithFrame:self.view.frame timeClockViewController:self];
-    
-    [self.view addSubview:timeClockView];
+    //RMDTimeClockView *timeClockView = [[RMDTimeClockView alloc] initWithFrame:self.view.frame timeClockViewController:self];
+    //[self.view addSubview:timeClockView];
+    self.textField = [[UITextField alloc] initWithFrame:CGRectMake(30, 30, 300, 100)];
+    [self initializeTextFieldInputView];
+    [self.view addSubview:self.textField];
 }
 
+- (void)initializeTextFieldInputView {
+    UIDatePicker *timePicker = [[UIDatePicker alloc] initWithFrame:CGRectZero];
+    timePicker.datePickerMode = UIDatePickerModeTime;
+    [timePicker addTarget:self
+                   action:@selector(timeUpdated:)
+         forControlEvents:UIControlEventValueChanged];
+    self.textField.inputView = timePicker;
+}
+
+- (void)timeUpdated:(UIDatePicker *)timePicker {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateStyle = NSDateFormatterNoStyle;
+    formatter.timeStyle = NSDateFormatterShortStyle;
+    self.textField.text = [formatter stringFromDate:timePicker.date];
+}
+
+- (void)doneButtonWasPressed:(UIBarButtonItem *)doneButton {
+    NSLog(@"here");
+    [self.timePicker resignFirstResponder];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
