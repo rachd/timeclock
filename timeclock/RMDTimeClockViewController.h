@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RMDTimeClockViewController : UIViewController
+@interface RMDTimeClockViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
