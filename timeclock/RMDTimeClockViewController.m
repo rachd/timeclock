@@ -44,11 +44,6 @@
     self.textField.text = [formatter stringFromDate:timePicker.date];
 }
 
-- (void)doneButtonWasPressed:(UIBarButtonItem *)doneButton {
-    NSLog(@"here");
-    [self.timePicker resignFirstResponder];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
