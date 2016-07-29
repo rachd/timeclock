@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CC7156B81C77674700B8E079 /* RMDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7156B71C77674700B8E079 /* RMDConstants.m */; };
-		CCAFD4C01C93D20D004F9606 /* RMDTimeClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAFD4BF1C93D20D004F9606 /* RMDTimeClockView.m */; };
-		CCAFD4C31C93D447004F9606 /* RMDTimeClockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAFD4C21C93D447004F9606 /* RMDTimeClockTableViewCell.m */; };
+		CCAFD4C31C93D447004F9606 /* RMDTimeClockInTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAFD4C21C93D447004F9606 /* RMDTimeClockInTableViewCell.m */; };
 		CCAFD4C61C93D4ED004F9606 /* RMDTimeClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCAFD4C51C93D4ED004F9606 /* RMDTimeClockViewController.m */; };
 		CCD198501C2211EF00B930A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD1984F1C2211EF00B930A4 /* main.m */; };
 		CCD198531C2211EF00B930A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198521C2211EF00B930A4 /* AppDelegate.m */; };
 		CCD1985B1C2211EF00B930A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD1985A1C2211EF00B930A4 /* Assets.xcassets */; };
 		CCD198691C2211EF00B930A4 /* timeclockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198681C2211EF00B930A4 /* timeclockTests.m */; };
 		CCD198741C2211EF00B930A4 /* timeclockUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD198731C2211EF00B930A4 /* timeclockUITests.m */; };
+		CCF2969F1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF2969E1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +38,8 @@
 /* Begin PBXFileReference section */
 		CC7156B61C77674700B8E079 /* RMDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDConstants.h; sourceTree = "<group>"; };
 		CC7156B71C77674700B8E079 /* RMDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDConstants.m; sourceTree = "<group>"; };
-		CCAFD4BE1C93D20D004F9606 /* RMDTimeClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockView.h; sourceTree = "<group>"; };
-		CCAFD4BF1C93D20D004F9606 /* RMDTimeClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockView.m; sourceTree = "<group>"; };
-		CCAFD4C11C93D447004F9606 /* RMDTimeClockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockTableViewCell.h; sourceTree = "<group>"; };
-		CCAFD4C21C93D447004F9606 /* RMDTimeClockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockTableViewCell.m; sourceTree = "<group>"; };
+		CCAFD4C11C93D447004F9606 /* RMDTimeClockInTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockInTableViewCell.h; sourceTree = "<group>"; };
+		CCAFD4C21C93D447004F9606 /* RMDTimeClockInTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockInTableViewCell.m; sourceTree = "<group>"; };
 		CCAFD4C41C93D4ED004F9606 /* RMDTimeClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockViewController.h; sourceTree = "<group>"; };
 		CCAFD4C51C93D4ED004F9606 /* RMDTimeClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockViewController.m; sourceTree = "<group>"; };
 		CCD1984B1C2211EF00B930A4 /* timeclock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeclock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +54,8 @@
 		CCD1986F1C2211EF00B930A4 /* timeclockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timeclockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD198731C2211EF00B930A4 /* timeclockUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = timeclockUITests.m; sourceTree = "<group>"; };
 		CCD198751C2211EF00B930A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF2969D1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDTimeClockOutTableViewCell.h; sourceTree = "<group>"; };
+		CCF2969E1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMDTimeClockOutTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				CC7156B51C77672D00B8E079 /* Constants */,
-				CCAFD4C11C93D447004F9606 /* RMDTimeClockTableViewCell.h */,
-				CCAFD4C21C93D447004F9606 /* RMDTimeClockTableViewCell.m */,
+				CCAFD4C11C93D447004F9606 /* RMDTimeClockInTableViewCell.h */,
+				CCAFD4C21C93D447004F9606 /* RMDTimeClockInTableViewCell.m */,
+				CCF2969D1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.h */,
+				CCF2969E1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.m */,
 				CCAFD4C41C93D4ED004F9606 /* RMDTimeClockViewController.h */,
 				CCAFD4C51C93D4ED004F9606 /* RMDTimeClockViewController.m */,
-				CCAFD4BE1C93D20D004F9606 /* RMDTimeClockView.h */,
-				CCAFD4BF1C93D20D004F9606 /* RMDTimeClockView.m */,
 				CCD198511C2211EF00B930A4 /* AppDelegate.h */,
 				CCD198521C2211EF00B930A4 /* AppDelegate.m */,
 				CCD1985A1C2211EF00B930A4 /* Assets.xcassets */,
@@ -288,9 +288,9 @@
 				CCAFD4C61C93D4ED004F9606 /* RMDTimeClockViewController.m in Sources */,
 				CCD198531C2211EF00B930A4 /* AppDelegate.m in Sources */,
 				CCD198501C2211EF00B930A4 /* main.m in Sources */,
-				CCAFD4C31C93D447004F9606 /* RMDTimeClockTableViewCell.m in Sources */,
-				CCAFD4C01C93D20D004F9606 /* RMDTimeClockView.m in Sources */,
+				CCAFD4C31C93D447004F9606 /* RMDTimeClockInTableViewCell.m in Sources */,
 				CC7156B81C77674700B8E079 /* RMDConstants.m in Sources */,
+				CCF2969F1CD9A0B20007F6B0 /* RMDTimeClockOutTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

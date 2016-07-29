@@ -23,6 +23,7 @@
                forControlEvents:UIControlEventValueChanged];
         self.clockOutField.inputView = timeOutPicker;
         self.clockOutField.delegate = self;
+        self.clockOutField.textAlignment = NSTextAlignmentCenter;
         UIToolbar *doneBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
         [doneBar setBarStyle:UIBarStyleDefault];
         UIBarButtonItem *spacer2 = [[UIBarButtonItem alloc]

@@ -16,6 +16,7 @@
 @property UITextField *textField;
 @property UIDatePicker *timePicker;
 @property NSArray *days;
+@property UITableView *tableView;
 
 @end
 
@@ -25,15 +26,26 @@
     [super viewDidLoad];
     self.days = [[NSArray alloc] initWithObjects:@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", nil];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    [self.view addSubview:tableView];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updateClockOut {
+    for (int section = 0; section < [self.tableView numberOfSections]; section++) {
+        for (int row = 0; row < [self.tableView numberOfRowsInSection:section]; row++) {
+            NSIndexPath *cellPathIn = [NSIndexPath indexPathForRow:0 inSection:section];
+            NSIndexPath *cellPathOut = [NSIndexPath indexPathForRow:1 inSection:section];
+            UITableViewCell* cellIn = [self.tableView cellForRowAtIndexPath:cellPathIn];
+            NSLog(@"%i", section);
+        }
+    }
 }
 
 #pragma mark Table Delegate methods
@@ -70,7 +82,6 @@
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
             if (!cell) {
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-                cell.textLabel.text = @"hi";
             }
             return cell;
         }
@@ -78,7 +89,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [self updateClockOut];
 }
 
 @end
